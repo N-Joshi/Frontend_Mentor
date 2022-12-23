@@ -93,6 +93,7 @@ button object {
   .preview_card {
     flex-direction: column;
     width: 370px;
+    margin: 0 1.3em;
   }
 
   img {
