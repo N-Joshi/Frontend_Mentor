@@ -8,7 +8,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | Stats preview card component</title>
+  <title>Frontend Mentor | Advice generator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -26,32 +26,19 @@
 
 <body>
   <main>
-    <div class="card_container">
-      <div class="stats_container">
-        <h1 class="heading">Get <span>insights</span> that help your business grow.</h1>
-        <p class="paragraph">Discover the benefits of data analytics and make better decisions regarding revenue,
-          customer
-          experience, and overall efficiency.</p>
-       
-          <ul class="stats_list">
-            <li><h2>10k+</h2><p>companies</p></li>
-            <li><h2>314</h2><p>templates</p></li>
-            <li><h2>12m+</h2> <p>queries</p></li>
-          </ul>
-      
-      </div>
-      <div class="bg-img">
-        <div class="overlay">
-          <div class="overlay-2"></div>
-        </div>
-      </div>
-    </div>
+    <section>
+      <p>Advice #<span id="advice_id"></span></p>
+      <h2>"<span id="advice_text"></span>"</h2>
+      <!--  <img srcset="./images/pattern-divider-mobile.svg 767w" src="./images/pattern-divider-desktop.svg" alt="pattern_divider" class="divider"/> -->
+      <img srcset="./images/pattern-divider-mobile.svg 295w, ./images/pattern-divider-desktop.svg 444w" sizes="(max-width: 760px) 295px, 444px" alt="pattern_divider" class="divider"/>
+      <button type="button" id="random_advice_generator"><img src="./images/icon-dice.svg" alt="random_advice_generator"/></button>
+    </section>
   </main>
-
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>

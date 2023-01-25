@@ -1,159 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 
-:root {
-    --prim-dark-blue: hsl(233, 47%, 7%);
-    --prim-sat-blue: hsl(244, 38%, 16%);
-    --prim-violet: hsl(277, 64%, 61%);
-  
-    --neu-white: hsl(0, 0%, 100%);
-    --neu-trans-white: hsla(0, 0%, 100%, 0.75);
-    --neu-more-trans-white: hsla(0, 0%, 100%, 0.6);
-  
-    --bg-violet: hsl(277deg, 100%, 50%, 0.42);
-    --bg-light-violet: hsl(293deg, 42%, 35%, 0.24);
-  }
+:root{
+    --light_cyan: hsl(193, 38%, 86%);
+    --neon_green: hsl(150, 100%, 66%);
+    --grayish_blue: hsl(217, 19%, 38%);
+    --dark_grayish_blue: hsl(217, 19%, 24%);
+    --dark_blue: hsl(218, 23%, 16%);
+}
 
-  
 *{
     box-sizing: border-box;
 }
 
 body{
-    font-family: "Inter", sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
+    font-size: 14px;
+    font-family: "Manrope", sans-serif;
     overflow-x: hidden;
     overflow-y: hidden;
-    color: white;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--dark_blue);
     min-height: 100vh;
-    background-color: var(--prim-dark-blue);
 }
 
-.card_container{
-    background-color: var(--prim-sat-blue);
-    border-radius: 10px 0px 0px 10px;
-    display:flex;
-    width: 1000px;
+section{
+    background-color: var(--dark_grayish_blue);
+    text-align: center;
+    border-radius: 15px;
+    padding: 2em;
+    width: 550px;
+    height: 315px;
 }
 
-.stats_container{
-    padding: 2em 4em;
-}
-
-.heading{
-    color: var(--neu-white);
-    font-size: 2em;
-    line-height: 1.2;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-
-.heading span{
-    color: var(--prim-violet);
-}
-
-.paragraph{
-    color: var(--neu-trans-white);
-    font-weight: 400;
-    width: 85%;
-    line-height: 1.5;
-    font-size: 15px;
-
-}
-
-.stats_list{
-    list-style: none;
-    padding:0;
-    display: flex;
-    justify-content: space-between;
-    margin: 3em 3em 0 0;
-}
-
-.stats_list h2{
-    font-weight: 700;
-    margin-block-end: 0.3em;
-}
-.stats_list p{
-    color: var(--neu-trans-white);
+p{
+    color: var(--neon_green);
     text-transform: uppercase;
-    margin: 0;
+    letter-spacing: 5px;
+    font-weight: 800;
     font-size: 12px;
-    letter-spacing: 1px;
-
 }
 
-.bg-img {
-    display: flex;
-    min-width: 450px;
-    min-height: 25em;
-    background: url(images/image-header-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 0 10px 10px 0;
-    overflow: hidden;
-  }
-  
-  .overlay {
-    display: flex;
-    background: var(--bg-violet);
-    height: 100%;
-    width: 100%;
-  }
-  
-  .overlay-2 {
-    display: flex;
-    background: var(--bg-light-violet);
-    height: 100%;
-    width: 100%;
-    mix-blend-mode: color-burn;
-  }
+h2{
+    color: var(--light_cyan);
+    font-size: 28px;
+    font-weight: 800;
+    height: 45%;
+}
+
+.divider{
+    position: relative;
+    top: 2em;
+}
+
+button{
+    background-color: var(--neon_green);
+    border: none;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    top: 15%;
+    position: relative;
+    cursor: pointer;
+}
+
+button:hover,
+button:active{
+    box-shadow: 0px 0px 15px 5px hsl(150deg 100% 66%);
+}
 
 
-  @media only screen and (max-width:767px){
-    
-    .main{
-        padding: 0 2em 0em 2em;
-    }
-
-    .card_container{
-        flex-direction: column-reverse;/
-    }
-
-    .bg-img {
-        background: url(images/image-header-mobile.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        min-width: 200px;
-        margin:0 1em 0 1em;
-        min-height: 18em;
-    }
-
-    .stats_container{
-        text-align: center;
-        padding: 2em 2em;
-    }
-
-    .stats_container .paragraph{
-        text-align: center;
-        width: 100%;
-        padding: 0 1.5em
-    }
-    
-    .stats_list{
+@media only screen and (max-width:767px){
+    section{
+        width: 365px;
+        height: 390px;
+        padding: 1.5em;
+        display: flex;
         flex-direction: column;
-        margin: 2em 0 0 0;
     }
-    .overlay,.overlay-2{
-        height: unset;
+
+    h2{
+        height: 55%;
     }
+
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        width: 60px;
+        height: 60px;
+    }
+
 }
