@@ -9,24 +9,16 @@ The designs were created to the following widths:
 
 ## Colors
 
-### Primary
-
-- Light Cyan: hsl(193, 38%, 86%)
-- Neon Green: hsl(150, 100%, 66%)
-
-### Neutral
-
-- Grayish Blue: hsl(217, 19%, 38%)
-- Dark Grayish Blue: hsl(217, 19%, 24%)
-- Dark Blue: hsl(218, 23%, 16%)
+- Very Dark Gray: hsl(0, 0%, 17%)
+- Dark Gray: hsl(0, 0%, 59%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (quote): 28px
+- Font size (text input): 18px
 
 ### Font
 
-- Family: [Manrope](https://fonts.google.com/specimen/Manrope)
-- Weights: 800
+- Family: [Rubik](https://fonts.google.com/specimen/Rubik)
+- Weights: 400, 500, 700
